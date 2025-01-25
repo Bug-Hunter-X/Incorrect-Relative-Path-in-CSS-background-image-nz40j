@@ -1,0 +1,12 @@
+The solution is to use a correct relative path or an absolute path.  This assumes that `image.png` is in the same directory as the HTML file.
+```css
+.element {
+  background-image: url('../images/image.png'); /* Correct relative path */
+}
+```
+Alternatively, use an absolute path if the location of the image is known relative to the server's root directory.
+```css
+.element {
+  background-image: url('/images/image.png'); /* Absolute path */
+}
+```

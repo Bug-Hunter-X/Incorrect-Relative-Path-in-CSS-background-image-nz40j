@@ -1,0 +1,7 @@
+The following CSS code snippet attempts to style an element with a background image using a relative path, but it fails to load the image because the path is incorrect. 
+```css
+.element {
+  background-image: url(./image.png);
+}
+```
+The reason is that the relative path `./image.png` is relative to the CSS file's location, not the HTML file's location. If the CSS file and the image file are not in the same directory, the image will not load.
